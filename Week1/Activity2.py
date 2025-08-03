@@ -17,5 +17,5 @@ for item in c:
 day = 1
 for temp in c:
     if temp > 20:
-        print("the day", day, "is above 20°C")
+        print("The day", day, "is above 20°C")
     day +=1
