@@ -5,6 +5,9 @@ c = np.array([18.5, 19, 20, 25.0, 2, 30, 13.9])
 max = np.max(c)
 min = np.min(c)
 
+average = np.average(c)
+print("The average teperature is :", average)
+
 print("The max record temperature is", max, "and the minimum temperature is", min)
 
 
