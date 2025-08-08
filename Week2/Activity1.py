@@ -1,6 +1,6 @@
 import random
 
-WORDS = ["Ronald", "laptop", "computer", "programming", "developer", "keyboard", "nothing"]
+listOfWords = ["Ronald", "laptop", "computer", "programming", "developer", "keyboard", "nothing"]
 word = ""
 blanks = []
 lives = 6
@@ -8,7 +8,7 @@ guessed_letters = []
 
 
 def generate_random_word():
-    return random.choice(WORDS)
+    return random.choice(listOfWords)
 
 def generate_blanks(selected_word):
     return ["_"] * len(selected_word)
