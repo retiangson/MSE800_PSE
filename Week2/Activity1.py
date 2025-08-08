@@ -6,12 +6,21 @@ blanks = []
 lives = 6
 guessed_letters = []
 
+
+def generate_random_word():
+    return random.choice(WORDS)
+
+def generate_blanks(selected_word):
+    return ["_"] * len(selected_word)
+
 def wordGuessing():
     global word, blanks, lives, guessed_letters
-    word = random.choice(WORDS)
-    blanks = ["_"] * len(word)
     lives = 6
     guessed_letters = []
+    
+    word = generate_random_word()
+    blanks = generate_blanks(word)
+
     print("Word guessing!")
     display_word()
 
@@ -42,7 +51,7 @@ def lose_life():
     global lives
     lives -= 1
 
-def run_WordGuessing():
+def start_WordGuessing():
     wordGuessing()
     while True:
         guess = ask_for_guess()
@@ -63,4 +72,4 @@ def run_WordGuessing():
             break
 
 if __name__ == "__main__":
-    run_WordGuessing()
+    start_WordGuessing()
