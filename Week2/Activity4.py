@@ -1,3 +1,6 @@
+#Using __init__, you initialize instance variables when creating an object. 
+#These variables hold data specific to that instance and can be accessed or modified by the object's methods. 
+#This allows each object to maintain its own state independently of other instances.
 class StringManipulator:
     def find_character(text, char):
         return text.find(char)
@@ -20,3 +23,4 @@ print("Length of string is:", length)
 
 uppercase_text = name.to_uppercase(text)
 print("Uppercase:", uppercase_text)
+
