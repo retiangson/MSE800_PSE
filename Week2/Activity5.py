@@ -3,7 +3,7 @@ class SentenceCheck:
         self.sentence = sentence
 
     def count_words(self):
-        words = self.sentence.strip().split()
+        words = self.sentence.split()
         return len(words)
 
 def main():
