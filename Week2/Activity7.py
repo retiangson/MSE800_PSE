@@ -5,14 +5,10 @@ class Employee:
         self.jobTitle = jobTitle
 
     def display_info(self):
-        print(f"Name: {self.name}\nJob Title: {self.jobTitle}\nSalary: ${self.salary:,.2f}")
-        print("-" * 30)
+        print(f"Name: {self.name}\nJob Title: {self.jobTitle}\nSalary: ${self.salary:,.2f}\n")
 
     def give_raise(self, amount):
-        self.salary += amount
-        print(f"{self.name} got a raise of ${amount:,.2f}!\nUpdated Salary: ${self.salary:,.2f}")
-        print("-" * 30)
-
+        print(f"{self.name} got a raise of ${amount:,.2f}!\nUpdated Salary: ${self.salary+amount:,.2f}\n")
 
 def get_raise_amount():
     while True:
@@ -25,7 +21,6 @@ def get_raise_amount():
                 return amount
         except ValueError:
             print("Invalid input! Please enter a number.")
-
 
 # List of employees
 employees = [
