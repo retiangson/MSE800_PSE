@@ -23,7 +23,7 @@ class FileReader:
 
 # Usage
 if __name__ == "__main__":
-    filepath = "D:/Users/retia/OneDrive/Documents/Ron School/MSE800_PSE/Week3/demo_file.txt"
+    filepath = "Week3/demo_file.txt"
 
     # Reading
     reader = FileReader(filepath, encoding='utf-8')
