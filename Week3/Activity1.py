@@ -7,10 +7,11 @@ class FileReader:
     def open_file(self, mode='r'):
         self.file = open(self.filepath, mode, encoding=self.encoding, errors='replace')
 
+
     def read_lines(self):
         if self.file and not self.file.closed:
             for line in self.file:
-                print(line.strip())
+                print(line[0:-1])
         else:
             print("No file is open to read.")
 
