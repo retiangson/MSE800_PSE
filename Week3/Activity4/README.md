@@ -6,7 +6,7 @@ This database powers a small retail store's digital backbone, streamlining opera
 
 2.Entities and EER diagram : 
 
-![Database Schema](./Diagram.svg)
+![Database Schema](./Diagram2.svg)
 
 3.Table design
 
