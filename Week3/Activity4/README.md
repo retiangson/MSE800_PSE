@@ -1,10 +1,10 @@
 Week 3 - Activity 4: design a database for your college
 
 1.Project scope (short paragraph)
-This database powers a small retail store's digital backbone, streamlining operations from inventory tracking to customer orders. It manages four core entities: products, customers, orders, and order items. The system ensures accurate stock levels, records customer details, and tracks each order's lifecycle—from placement to fulfillment. By linking products to orders and customers, it enables efficient sales reporting, customer service, and inventory control. Designed for scalability, the schema supports future enhancements like payment integration, delivery tracking, and promotional analytics, making it a robust foundation for a growing retail business.
+This database powers a small retail store's digital backbone, streamlining operations from inventory tracking to customer orders. It manages four core entities: products, customers, orders, and order items. The system ensures accurate stock levels, records customer details, and tracks each order's lifecycle—from placement to fulfillment. By linking products to orders and customers, it enables efficient sales reporting, customer service, and inventory control.
 
 2.Entities and EER diagram : 
-Diagram.svg
+
 
 
 3.Table design
