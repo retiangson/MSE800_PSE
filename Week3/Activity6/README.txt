@@ -1,13 +1,32 @@
 ========================================
-Yoobee Colleges - Ronald Ephraim Tiangson - Week 3 Activity 6
-Command-Line Application with SQLAlchemy ORM
+Store Management CLI Application
+Yoobee Colleges – Ronald Ephraim Tiangson – Week 3 Activity 6
 ========================================
 
 Project Description:
 --------------------
-This project is a Python-based command-line application that demonstrates
-basic database operations using SQLAlchemy ORM (similar to Entity Framework).
-It manages Customers, Products, and Orders through a simple text menu.
+This project is a Python-based command-line application for managing a small store’s operations using SQLAlchemy ORM.
+It allows you to keep track of customers, products, and orders through a simple interactive menu, making it easier 
+to perform basic store management tasks without needing a graphical interface.
+Features
+
+Customer Management
+--------------------
+Add new customers with their details
+View all registered customers
+Delete customers by ID
+
+Product Management
+--------------------
+Add new products with price information
+View available products in the store
+Delete products by ID
+
+Order Management
+--------------------
+Create new orders linking customers and products
+View all existing orders
+Delete orders by ID
 
 Key Features:
 -------------
@@ -18,11 +37,11 @@ Key Features:
 3. Delete Records
    - Delete customers, products, and orders by ID.
 
-Technical Aspects:
+Technical Details:
 ------------------
 - Language: Python 3
 - ORM: SQLAlchemy
-- Database: SQLite3 (file-based, activity4.db)
+- Database: SQLite3 (file-based, store.db)
 - Modular Code:
   * config.py    - database configuration
   * database.py  - SQLAlchemy engine and session
@@ -32,7 +51,7 @@ Technical Aspects:
   * orders.py    - Order functions
   * main.py      - Command-line menu
 
-How to Run:
+Installation & Usage:
 -----------
 1. Install dependencies:
    > pip install sqlalchemy
@@ -40,15 +59,15 @@ How to Run:
 2. Run the program:
    > python main.py
 
-Database:
+Database Schema:
 ---------
-The database file (activity4.db) will be created automatically.
-
+The database file store.db will be automatically created on first run.
 Tables:
-- customers(id, name, email)
-- products(id, name, price)
-- orders(id, customer_id, product_id)
+customers (id, name, email)
+products (id, name, price)
+orders (id, customer_id, product_id)
 
 Author:
 -------
-Ronald Ephraim Tiangson - Yoobee Colleges - Week 3 Activity 6 Submission
+Ronald Ephraim Tiangson
+Yoobee Colleges – Week 3 Activity 6 Submission
