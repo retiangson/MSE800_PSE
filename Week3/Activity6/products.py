@@ -1,23 +1,23 @@
-from database import get_connection
+from database import SessionLocal
+from models import Product
 
 def add_product(name, price):
-    conn = get_connection()
-    cursor = conn.cursor()
-    cursor.execute("INSERT INTO products (name, price) VALUES (?, ?)", (name, price))
-    conn.commit()
-    conn.close()
+    session = SessionLocal()
+    product = Product(name=name, price=price)
+    session.add(product)
+    session.commit()
+    session.close()
 
 def view_products():
-    conn = get_connection()
-    cursor = conn.cursor()
-    cursor.execute("SELECT * FROM products")
-    rows = cursor.fetchall()
-    conn.close()
-    return rows
+    session = SessionLocal()
+    products = session.query(Product).all()
+    session.close()
+    return products
 
 def delete_product(product_id):
-    conn = get_connection()
-    cursor = conn.cursor()
-    cursor.execute("DELETE FROM products WHERE id = ?", (product_id,))
-    conn.commit()
-    conn.close()
+    session = SessionLocal()
+    product = session.query(Product).get(product_id)
+    if product:
+        session.delete(product)
+        session.commit()
+    session.close()

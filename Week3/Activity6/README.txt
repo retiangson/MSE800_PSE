@@ -1,18 +1,18 @@
 ========================================
-Yoobee Colleges - Week 3 Activity 6
-Command-Line Application with SQLite3
+Yoobee Colleges - Ronald Ephraim Tiangson - Week 3 Activity 6
+Command-Line Application with SQLAlchemy ORM
 ========================================
 
 Project Description:
 --------------------
 This project is a Python-based command-line application that demonstrates
-basic database operations using SQLite3. It manages Customers, Products,
-and Orders through a simple text menu.
+basic database operations using SQLAlchemy ORM (similar to Entity Framework).
+It manages Customers, Products, and Orders through a simple text menu.
 
 Key Features:
 -------------
 1. Add Records
-   - Add customers, products, and orders into the database.
+   - Add customers, products, and orders.
 2. View Records
    - View stored customers, products, and orders.
 3. Delete Records
@@ -21,37 +21,33 @@ Key Features:
 Technical Aspects:
 ------------------
 - Language: Python 3
-- Database: SQLite3 (file-based, store.db)
+- ORM: SQLAlchemy
+- Database: SQLite3 (file-based, activity4.db)
 - Modular Code:
-  * database.py - initializes and connects to DB
-  * customers.py - CRUD operations for Customers
-  * products.py  - CRUD operations for Products
-  * orders.py    - CRUD operations for Orders
-  * main.py      - Command-line interface menu
+  * config.py    - database configuration
+  * database.py  - SQLAlchemy engine and session
+  * models.py    - ORM classes for Customers, Products, Orders
+  * customers.py - Customer functions
+  * products.py  - Product functions
+  * orders.py    - Order functions
+  * main.py      - Command-line menu
 
 How to Run:
 -----------
-1. Ensure Python 3 is installed.
-2. Open a terminal in the project folder.
-3. Run the program:
+1. Install dependencies:
+   > pip install sqlalchemy
+
+2. Run the program:
    > python main.py
 
 Database:
 ---------
 The database file (activity4.db) will be created automatically.
+
 Tables:
 - customers(id, name, email)
 - products(id, name, price)
 - orders(id, customer_id, product_id)
-
-Example Usage:
---------------
-1. Add a Customer (choice 1)
-   Enter name and email.
-2. View Customers (choice 2)
-   Shows all stored customers.
-3. Add an Order (choice 7)
-   Requires valid customer_id and product_id.
 
 Author:
 -------

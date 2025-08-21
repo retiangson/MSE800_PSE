@@ -1,23 +1,23 @@
-from database import get_connection
+from database import SessionLocal
+from models import Customer
 
 def add_customer(name, email):
-    conn = get_connection()
-    cursor = conn.cursor()
-    cursor.execute("INSERT INTO customers (name, email) VALUES (?, ?)", (name, email))
-    conn.commit()
-    conn.close()
+    session = SessionLocal()
+    customer = Customer(name=name, email=email)
+    session.add(customer)
+    session.commit()
+    session.close()
 
 def view_customers():
-    conn = get_connection()
-    cursor = conn.cursor()
-    cursor.execute("SELECT * FROM customers")
-    rows = cursor.fetchall()
-    conn.close()
-    return rows
+    session = SessionLocal()
+    customers = session.query(Customer).all()
+    session.close()
+    return customers
 
 def delete_customer(customer_id):
-    conn = get_connection()
-    cursor = conn.cursor()
-    cursor.execute("DELETE FROM customers WHERE id = ?", (customer_id,))
-    conn.commit()
-    conn.close()
+    session = SessionLocal()
+    customer = session.query(Customer).get(customer_id)
+    if customer:
+        session.delete(customer)
+        session.commit()
+    session.close()
