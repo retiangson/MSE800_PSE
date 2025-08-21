@@ -6,7 +6,7 @@ class StringManipulator:
         return self.text.find(char)
     
     def string_length(self):
-        return self.text.lenght()
+        return len(self.text)
     
     def to_uppercase(self):
         return self.text.upper()

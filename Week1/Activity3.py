@@ -22,3 +22,4 @@ print("75th percentile of rainfall:", percentile75)
 
 above75 = rainfallArray[rainfallArray > percentile75]
 print("More than 75th percentile:", above75)
+

@@ -1,0 +1,11 @@
+1. Why division by zero is not possible
+Dividing by zero doesn’t make sense. If you try something like “10 ÷ 0,” it means “what number times 0 equals 10?” and there’s no such number. That’s why calculators and computers just give an error—it simply breaks the rules of math.
+
+2. Complex number operations and visualization (First task)
+A script can be made that takes two complex numbers and performs addition, subtraction, multiplication, and division. The results can then be shown on a graph (complex plane) as arrows or vectors so the numbers can be understood visually.
+
+3. Coordinate system conversion (Second task)
+Another script can be created to convert complex numbers between Cartesian form (x + iy) and polar form (magnitude and angle). This makes it easier to use depending on the situation, like in electrical engineering.
+
+4. Electrical frequency research
+Some countries use 60 Hz power (like the US), while most of the world uses 50 Hz (like Europe, Asia, and New Zealand). The difference is due to historical choices made when power systems were first being built, and both standards remained because changing them now would be too costly.
