@@ -4,7 +4,7 @@
    #    ▪ Then, use a script to draw this vector.
    #    ▪ Visualize and draw a vector that is "behind me" (implied negative x-axis).
    #    ▪ Visualize and plot a vector that is "down and slightly towards my right" (implied negative Z and negative Y axis) using the script by tweaking its values.
-         ![Screenshot](Vector1.0.0.JPG)
+ ![Screenshot](Vector1.0.0.JPG)
 
    #2 Experiment with Spherical Coordinates for Bloch Sphere:
    #    ▪ You need to represent vectors using the spherical coordinate system, which requires length, polar angle, and azimuthal angle as arguments.
