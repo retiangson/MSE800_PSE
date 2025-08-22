@@ -1,11 +1,23 @@
-Actor :  Description
+Actors : 
+    Student
+    Teacher
+    Admin
 
-Administrator : The only user with access to the system. They can log in and perform all management actions.
-Teacher:Teaches assigned courses (data managed by Admin). 
-Student:Enrolls in courses and receives grades (data managed by Admin).
+Use Cases:
+    Student: 
+    Log in to the system
+    Enroll in programs
 
-Usecase : Description
+    Admin : 
+        Log in to the system
+        Add/manage programs
+        Add/manage subjects
+        Add/manage students
+        Add/manage teachers
+        Set program pricing
+    Assign subjects to teachers
 
-Course : Created by Admin, assigned to teachers. 
-Enrollment : Links a Student and a Course. 
-Grade : Linked to Enrollment and assigned to a Student in a specific Course.
+Teacher :
+    Log in to the system
+    View assigned subjects
+    Record/assign grades for students
