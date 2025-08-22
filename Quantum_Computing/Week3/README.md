@@ -5,14 +5,17 @@
         ▪ Visualize and draw a vector that is "behind me" (implied negative x-axis).
         ▪ Visualize and plot a vector that is "down and slightly towards my right" (implied negative Z and negative Y axis) using the script by tweaking its values.
          ![Screenshot](Vector1.0.0.JPG)
+
     2 Experiment with Spherical Coordinates for Bloch Sphere:
         ▪ You need to represent vectors using the spherical coordinate system, which requires length, polar angle, and azimuthal angle as arguments.
         ▪ Draw vectors that align on the positive X-axis, positive Y-axis, negative Y-axis, negative X-axis, and negative Z-axis.
         ▪ For a vector aligning on the positive X-axis, the polar angle will be 90 degrees (π/2) and the azimuthal angle will be 0.
-        ▪ For a vector aligning on the negative Y-axis, the polar angle will be 90 degrees (π/2) and the azimuthal angle will be 270 degrees (3π/2).
+        ▪ For a vector aligning on the negative Y-axis, the polar angle will be 90 degrees (π/2) and the azimuthal angle will be 
+        270 degrees (3π/2).
         ▪ For a vector aligning on the negative X-axis, the polar angle will be 90 degrees (π/2) and the azimuthal angle will be 180 degrees (π).
         ▪ You are instructed to download and execute the script, manipulating these angles to project the fundamental vector alignments.
         ![Screenshot](2Experiment.JPG)
+
 • State Vector Calculation Tasks
     ◦ Calculate the State Vector for a Given Circuit (Task 1): Calculate the state vector for a circuit that begins with two qubits (0, 0) and applies a Hadamard gate (H) on the first qubit and an X gate on the second qubit.
     ◦ Home Assignment: Circuit Design and State Vector Verification (Task 2):
