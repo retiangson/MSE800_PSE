@@ -14,7 +14,7 @@
         270 degrees (3π/2).
         ▪ For a vector aligning on the negative X-axis, the polar angle will be 90 degrees (π/2) and the azimuthal angle will be 180 degrees (π).
         ▪ You are instructed to download and execute the script, manipulating these angles to project the fundamental vector alignments.
-![Screenshot](2Experiment.JPG)
+![Screenshot](2Experiment.jpg)
 
 • State Vector Calculation Tasks
     ◦ Calculate the State Vector for a Given Circuit (Task 1): Calculate the state vector for a circuit that begins with two qubits (0, 0) and applies a Hadamard gate (H) on the first qubit and an X gate on the second qubit.
