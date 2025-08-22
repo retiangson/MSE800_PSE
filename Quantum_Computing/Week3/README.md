@@ -1,19 +1,19 @@
-• Bloch Sphere Visualization Tasks
-    1 Visualize and Draw Vectors in Cartesian Coordinates:
-        ▪ Visualize where a vector at (1, 0, 0) would be on the Bloch sphere.
-        ▪ Then, use a script to draw this vector.
-        ▪ Visualize and draw a vector that is "behind me" (implied negative x-axis).
-        ▪ Visualize and plot a vector that is "down and slightly towards my right" (implied negative Z and negative Y axis) using the script by tweaking its values.
+#• Bloch Sphere Visualization Tasks
+   #1 Visualize and Draw Vectors in Cartesian Coordinates:
+   #    ▪ Visualize where a vector at (1, 0, 0) would be on the Bloch sphere.
+   #    ▪ Then, use a script to draw this vector.
+   #    ▪ Visualize and draw a vector that is "behind me" (implied negative x-axis).
+   #    ▪ Visualize and plot a vector that is "down and slightly towards my right" (implied negative Z and negative Y axis) using the script by tweaking its values.
          ![Screenshot](Vector1.0.0.JPG)
 
-    2 Experiment with Spherical Coordinates for Bloch Sphere:
-        ▪ You need to represent vectors using the spherical coordinate system, which requires length, polar angle, and azimuthal angle as arguments.
-        ▪ Draw vectors that align on the positive X-axis, positive Y-axis, negative Y-axis, negative X-axis, and negative Z-axis.
-        ▪ For a vector aligning on the positive X-axis, the polar angle will be 90 degrees (π/2) and the azimuthal angle will be 0.
-        ▪ For a vector aligning on the negative Y-axis, the polar angle will be 90 degrees (π/2) and the azimuthal angle will be 
-        270 degrees (3π/2).
-        ▪ For a vector aligning on the negative X-axis, the polar angle will be 90 degrees (π/2) and the azimuthal angle will be 180 degrees (π).
-        ▪ You are instructed to download and execute the script, manipulating these angles to project the fundamental vector alignments.
+   #2 Experiment with Spherical Coordinates for Bloch Sphere:
+   #    ▪ You need to represent vectors using the spherical coordinate system, which requires length, polar angle, and azimuthal angle as arguments.
+   #    ▪ Draw vectors that align on the positive X-axis, positive Y-axis, negative Y-axis, negative X-axis, and negative Z-axis.
+   #    ▪ For a vector aligning on the positive X-axis, the polar angle will be 90 degrees (π/2) and the azimuthal angle will be 0.
+   #    ▪ For a vector aligning on the negative Y-axis, the polar angle will be 90 degrees (π/2) and the azimuthal angle will be 
+   #    270 degrees (3π/2).
+   #    ▪ For a vector aligning on the negative X-axis, the polar angle will be 90 degrees (π/2) and the azimuthal angle will be 180 degrees (π).
+   #    ▪ You are instructed to download and execute the script, manipulating these angles to project the fundamental vector alignments.
 ![Screenshot](2Experiment.jpg)
 
 • State Vector Calculation Tasks
@@ -62,6 +62,6 @@
 
 
 
-• Unitary Matrix Task
-    ◦ Identify and Test Unitary Matrices for Gates: For the quantum gates you are familiar with (Hadamard and X gates), figure out their unitary matrices.
-    ◦ Multiply each matrix twice (A × A) and check if the result is an identity matrix. This demonstrates that these gates are represented by unitary matrices that are self-inverse.
+#• Unitary Matrix Task
+#    ◦ Identify and Test Unitary Matrices for Gates: For the quantum gates you are familiar with (Hadamard and X gates), figure out their unitary matrices.
+#    ◦ Multiply each matrix twice (A × A) and check if the result is an identity matrix. This demonstrates that these gates are represented by #unitary matrices that are self-inverse.
