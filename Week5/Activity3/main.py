@@ -11,5 +11,6 @@ if __name__ == "__main__":
 
     # Display info
     print(student.display_info())
+    print(student.display_original_info())
     print(academic.display_info())
     print(staff.display_info())
