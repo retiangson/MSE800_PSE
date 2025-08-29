@@ -15,7 +15,7 @@ Use Cases:
         Add/manage students
         Add/manage teachers
         Set program pricing
-    Assign subjects to teachers
+        Assign subjects to teachers
 
 Teacher :
     Log in to the system

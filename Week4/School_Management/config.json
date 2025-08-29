@@ -1,0 +1,8 @@
+{
+    "db_url": "sqlite:///school.db",
+    "default_admin": {
+        "username": "admin",
+        "password": "admin",
+        "name": "System Administrator"
+    }
+}
