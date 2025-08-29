@@ -1,1 +1,1 @@
-DATABASE_URL = "sqlite:///activity4.db"
+DATABASE_URL = "sqlite:///store.db"
