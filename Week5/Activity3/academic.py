@@ -1,6 +1,6 @@
 from person import Person
 
-class Academic(Person):
+class Teacher(Person):
     def __init__(self, name, address, age, ID, tax_code, salary):
         super().__init__(name, address, age, ID)
         self.tax_code = tax_code
