@@ -1,6 +1,6 @@
 
 from student import Student
-from academic import Teacher
+from teacher import Teacher
 from general_staff import GeneralStaff
 
 if __name__ == "__main__":
