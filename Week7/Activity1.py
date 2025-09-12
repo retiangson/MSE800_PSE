@@ -128,11 +128,6 @@ if __name__ == "__main__":
         # New service instances
         user_service = UserService(db)
         order_service = OrderService(db)
-
-        # Old service instances
-        us = UserServiceOld()
-        os = OrderServiceOld()
-
         # ---------------------------
         # Measure NEW service timing
         # ---------------------------
@@ -145,17 +140,22 @@ if __name__ == "__main__":
         print("New Service Orders:", len(orders_new))
         print(f"New Services took: {end_new - start_new:.6f} seconds\n")
 
-        # ---------------------------
-        # Measure OLD service timing
-        # ---------------------------
-        start_old = time.perf_counter()
-        user_old = us.get_user(1)
-        orders_old = os.get_orders(1)
-        end_old = time.perf_counter()
+   
+    # ---------------------------
+    # Measure OLD service timing
 
-        print("Old Service User:", user_old)
-        print("Old Service Orders:", len(orders_old))
-        print(f"Old Services took: {end_old - start_old:.6f} seconds\n")
+    # ---------------------------
+    # Old service instances
+    us = UserServiceOld()
+    os = OrderServiceOld()
+    start_old = time.perf_counter()
+    user_old = us.get_user(1)
+    orders_old = os.get_orders(1)
+    end_old = time.perf_counter()
+
+    print("Old Service User:", user_old)
+    print("Old Service Orders:", len(orders_old))
+    print(f"Old Services took: {end_old - start_old:.6f} seconds\n")
 
             
 
