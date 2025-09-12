@@ -141,13 +141,14 @@ if __name__ == "__main__":
         print(f"New Services took: {end_new - start_new:.6f} seconds\n")
 
    
-    # ---------------------------
-    # Measure OLD service timing
 
-    # ---------------------------
     # Old service instances
     us = UserServiceOld()
     os = OrderServiceOld()
+
+    # ---------------------------
+    # Measure OLD service timing
+    # ---------------------------
     start_old = time.perf_counter()
     user_old = us.get_user(1)
     orders_old = os.get_orders(1)
@@ -156,6 +157,3 @@ if __name__ == "__main__":
     print("Old Service User:", user_old)
     print("Old Service Orders:", len(orders_old))
     print(f"Old Services took: {end_old - start_old:.6f} seconds\n")
-
-            
-
