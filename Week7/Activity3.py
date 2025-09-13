@@ -54,7 +54,6 @@ class PaymentGateway:
 
     def __new__(cls):
         if cls._instance is None:
-            print("Initializing Payment Gateway Singleton...")
             cls._instance = super(PaymentGateway, cls).__new__(cls)
         return cls._instance
 
@@ -64,14 +63,10 @@ class PaymentGateway:
 
 
 if __name__ == "__main__":
-    gateway1 = PaymentGateway()
-    gateway2 = PaymentGateway()
+    gateway = PaymentGateway()
 
-    print("Are both gateways the same?", gateway1 is gateway2)  # Singleton check
-
-    # Sample transactions
-    print(gateway1.process("CreditCard", 250.75))
-    print(gateway1.process("PayPal", 99.99))
-    print(gateway1.process("BankTransfer", 500.00))
-    print(gateway1.process("Crypto", 1200.50))
-    print(gateway1.process("GooglePay", 75.20))
+    print(gateway.process("CreditCard", 250.75))
+    print(gateway.process("PayPal", 99.99))
+    print(gateway.process("BankTransfer", 500.00))
+    print(gateway.process("Crypto", 1200.50))
+    print(gateway.process("GooglePay", 75.20))
