@@ -1,8 +1,8 @@
-# Singleton Pattern Ensures all payments are processed in one place, no confusion, no duplicates.
-# Factory Pattern Decides which payment method to use.
+# Singleton Pattern Ensures all payments are processed in one place, no confusion, no duplicates. PaymentGateway()
+# Factory Pattern Decides which payment method to use. create_payment()
 #The Factory pattern is applied to dynamically create the appropriate payment method object without requiring the client code to know 
 # the exact implementation. This improves flexibility and makes the system easy to extend; for example, adding a new payment method requires 
-# only creating a new class and registering it with the factory.
+# only creating a new class and registering it with the factory. process_paymentI()
 
 from abc import ABC, abstractmethod
 
