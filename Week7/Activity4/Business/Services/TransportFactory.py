@@ -2,10 +2,7 @@
 from Domain.Model.Transport import RoadTruck, SeaVessel
 
 class TransportFactory:
-    """
-    Factory that creates transport instances for different modes.
-    Extendable (e.g., add RAIL or AIR later without changing client code).
-    """
+    #Factory that creates transport instances for different modes.  Extendable (e.g., add RAIL or AIR later without changing client code).
     @staticmethod
     def create(mode: str, capacity_kg: int, identifier: str):
         m = (mode or "").strip().upper()

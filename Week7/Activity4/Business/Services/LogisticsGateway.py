@@ -3,10 +3,7 @@ import threading
 from Domain.DBManager import DBManager
 
 class LogisticsGateway:
-    """
-    Domain-level Singleton that centralizes transactional operations, such as
-    moving cargo through statuses and ensuring referential integrity.
-    """
+    #Domain-level Singleton that centralizes transactional operations
     _instance = None
     _lock = threading.Lock()
 
