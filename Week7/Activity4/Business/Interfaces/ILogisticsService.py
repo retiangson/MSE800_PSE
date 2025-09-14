@@ -1,0 +1,9 @@
+
+from abc import ABC, abstractmethod
+class ILogisticsService(ABC):
+    @abstractmethod
+    def register_cargo(self, ref, description, weight_kg): ...
+    @abstractmethod
+    def add_transport(self, mode, capacity_kg, identifier): ...
+    @abstractmethod
+    def plan_dispatch(self, cargo_ref, preferred_mode): ...

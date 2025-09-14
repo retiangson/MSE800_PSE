@@ -2,42 +2,42 @@
 # Factory Pattern Decides which payment method to use. create_payment()
 #The Factory pattern is applied to dynamically create the appropriate payment method object without requiring the client code to know 
 # the exact implementation. This improves flexibility and makes the system easy to extend; for example, adding a new payment method requires 
-# only creating a new class and registering it with the factory. process_paymentI()
+# only creating a new class and registering it with the factory. process_payment()
 
 from abc import ABC, abstractmethod
 
-class PaymentMethod(ABC):
+class IPaymentMethod(ABC):
     @abstractmethod
     def process_payment(self, amount: float) -> str:
         pass
 
-class CreditCardPayment(PaymentMethod):
+class CreditCardPayment(IPaymentMethod):
     def process_payment(self, amount: float) -> str:
         return f"Processing ${amount:.2f} via Credit Card"
 
 
-class PayPalPayment(PaymentMethod):
+class PayPalPayment(IPaymentMethod):
     def process_payment(self, amount: float) -> str:
         return f"Processing ${amount:.2f} via PayPal"
 
 
-class BankTransferPayment(PaymentMethod):
+class BankTransferPayment(IPaymentMethod):
     def process_payment(self, amount: float) -> str:
         return f"Processing ${amount:.2f} via Bank Transfer"
 
 
-class CryptoPayment(PaymentMethod):
+class CryptoPayment(IPaymentMethod):
     def process_payment(self, amount: float) -> str:
         return f"Processing ${amount:.2f} via Cryptocurrency"
 
 
-class GooglePayPayment(PaymentMethod):
+class GooglePayPayment(IPaymentMethod):
     def process_payment(self, amount: float) -> str:
         return f"Processing ${amount:.2f} via GooglePay"
 
 class PaymentFactory:
     @staticmethod
-    def create_payment(method: str) -> PaymentMethod:
+    def create_payment(method: str) -> IPaymentMethod:
         methods = {
             "creditcard": CreditCardPayment,
             "paypal": PayPalPayment,
