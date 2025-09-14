@@ -5,7 +5,7 @@ svc = LogisticsService()
 
 def menu():
     while True:
-        print("\n=== Auckland Port Logistics (Singleton + Factory) ===")
+        print("\n=== Auckland Port Logistics ===")
         print("1) Register cargo")
         print("2) Add transport (ROAD/SEA)")
         print("3) Plan dispatch")
