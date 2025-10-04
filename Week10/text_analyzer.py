@@ -11,7 +11,6 @@ It calculates:
 
 from typing import Dict
 
-
 class TextAnalyzer:
     """
     A class to analyze text input for length, uppercase, digits,
@@ -82,7 +81,6 @@ class TextAnalyzer:
             "special_character_count": self.count_special_characters(),
         }
 
-
 def main() -> None:
     """
     Entry point for running the Text Analyzer interactively.
@@ -99,7 +97,6 @@ def main() -> None:
     print(f"Uppercase Count: {results['uppercase_count']}")
     print(f"Digit Count: {results['digit_count']}")
     print(f"Special Character Count: {results['special_character_count']}")
-
 
 if __name__ == "__main__":
     main()
