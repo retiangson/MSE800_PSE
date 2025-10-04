@@ -1,0 +1,10 @@
+\documentclass{standalone}
+\usepackage{quantikz}
+
+\begin{document}
+\begin{quantikz}[row sep={0.7cm,between origins}, column sep=1cm]
+\lstick{$\ket{0}$} & \gate{H} & \gate[wires=3]{Oracle $U_f$} & \gate[wires=3]{Diffusion} & \qw \\
+\lstick{$\ket{0}$} & \gate{H} &                               &                             & \qw \\
+\lstick{$\ket{0}$} & \gate{H} &                               &                             & \qw
+\end{quantikz}
+\end{document}
