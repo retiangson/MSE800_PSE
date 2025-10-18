@@ -15,7 +15,27 @@ settings.configure(
 
 # --- View function ---
 def welcome(request, name="Guest"):
-    return HttpResponse(f"Welcome {name} to Django!")
+    html = f"""
+    <html>
+        <head>
+            <title>Welcome Page</title>
+            <style>
+                body {{
+                    background-color: green;
+                    color: red;
+                    font-family: Arial, sans-serif;
+                    text-align: center;
+                    padding-top: 20%;
+                    font-size: 2em;
+                }}
+            </style>
+        </head>
+        <body>
+            <p>Welcome {name} to Django!</p>
+        </body>
+    </html>
+    """
+    return HttpResponse(html)
 
 # --- URL patterns ---
 urlpatterns = [
