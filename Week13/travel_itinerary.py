@@ -52,6 +52,11 @@ def generate_itinerary(destination, days, budget, interests):
         ],
         temperature=0.7,
         max_tokens=1000,
+        top_p=1,
+        top_k=0,
+        frequency_penalty=0,
+        presence_penalty=0,
+
     )
 
     result = response.choices[0].message.content.strip()
