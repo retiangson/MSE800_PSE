@@ -25,19 +25,18 @@ def build_prompt(destination: str, days: int, budget: str, interests: list[str])
     positive (what to do) and negative (what to avoid) guidance.
 
     **Positive prompt (what to do):**
-    - Design realistic, experience-rich itineraries emphasizing local culture, food, and scenic beauty.
-    - Balance each day with morning, afternoon, and evening activities.
-    - Keep travel routes logical and geographically consistent.
-    - Include estimated costs aligned with the stated budget.
-    - Provide variety — no two days should feel identical.
-    - Suggest local markets, cultural sites, or nature activities where possible.
+        -Emphasize realistic, 
+        -culturally rich,
+        -scenic Auckland activities for a 25-year-old traveler. 
+        -Highlight iconic landmarks
+        -nature escapes, and balanced daily plans blending urban and outdoor experiences.
 
     **Negative prompt (what to avoid):**
-    - Do NOT include unrealistic or geographically impossible travel within a single day.
-    - Do NOT use generic or vague phrases like "explore the city" or "enjoy free time."
-    - Do NOT repeat the same activity or attraction across days.
-    - Do NOT include inappropriate content such as nightclubs or alcohol-related suggestions.
-    - Do NOT produce explanations, markdown, or commentary — only valid JSON.
+        -Avoid unrealistic travel
+        -nightlife or alcohol focus
+        -vague phrases
+        -and repetitive activities. 
+        -Do not include text outside of valid JSON."
     """
     return f"""
             You are a professional travel planner AI.
@@ -48,25 +47,19 @@ def build_prompt(destination: str, days: int, budget: str, interests: list[str])
             {', '.join(interests)}.
 
             ---
-            - Design realistic, experience-rich itineraries emphasizing local culture, food, and scenic beauty.
-            - Balance each day with morning, afternoon, and evening activities.
-            - Keep travel routes logical and geographically consistent.
-            - Include estimated costs aligned with the stated budget.
-            - Provide variety — no two days should feel identical.
-            - Suggest local markets, cultural sites, or nature activities where possible.
+            Emphasize realistic including: 
+            -culturally rich and scenic Auckland activities for a 25-year-old traveler. 
+            -Highlight iconic landmarks
+            -nature escapes, and balanced daily plans blending urban and outdoor experiences.
             ---
-            - Do NOT include unrealistic or geographically impossible travel within a single day.
-            - Do NOT use generic or vague phrases like "explore the city" or "enjoy free time."
-            - Do NOT repeat the same activity or attraction across days.
-            - Do NOT include inappropriate content such as nightclubs or alcohol-related suggestions.
-            - Do NOT produce explanations, markdown, or commentary — only valid JSON.
+            Avoid unrealistic travel including:
+            -nightlife or alcohol focus
+            -vague phrases
+            -and repetitive activities. 
             ---
-            Each day in the itinerary must include:
-            - Morning, Afternoon, and Evening activities (as short, descriptive sentences)
-            - An estimated daily cost (float or integer)
+            -Do not include text outside of valid JSON."
 
             Return ONLY valid JSON, structured as:
-
             [
             {{
                 "day": 1,
